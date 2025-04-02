@@ -1,0 +1,182 @@
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #f4f7f6;
+}
+
+/* Container for centering content */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+/* Full-screen Section */
+.full-screen {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+}
+
+/* Welcome Section */
+#welcome {
+    background-color: #abc8a2;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.welcome-text {
+    font-size: 3rem;
+    font-weight: 600;
+    animation: moveText 10s ease-in-out infinite alternate;
+}
+
+.highlight {
+    color: #5e4b3c; /* Deep Olive */
+}
+
+/* About Section */
+#about {
+    background-color: #f0f5f1;
+    color: #333;
+    padding: 40px;
+    animation: fadeIn 2s ease-out;
+}
+
+.about-text {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin: 20px 0;
+    color: #333;
+}
+
+.about-text strong {
+    color: #abc8a2; /* Highlight for your name */
+}
+
+/* Skills Section */
+.skills-list {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: moveSkill 1s ease-in-out forwards;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skill span {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Contact Section */
+.contact-info {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.contact-info a {
+    color: #abc8a2;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animation for Fade-In */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Variance in Section Animations */
+@keyframes moveText {
+    0% {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(30px);
+        opacity: 1;
+    }
+}
+
+@keyframes moveSkill {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Scrollable first section */
+.scrollable {
+    animation: moveScrollable 15s infinite alternate;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+@keyframes moveScrollable {
+    0% {
+        transform: translateY(0);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translateY(10px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-10px);
+        opacity: 0.8;
+    }
+}
