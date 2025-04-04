@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Thapelo Makgakga | Portfolio</title>
+    <title>Thapelo Makgakga's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <header>
+        <!-- Header content here -->
+    </header>
 
     <!-- Welcome Section -->
     <section id="welcome" class="full-screen section scrollable">
@@ -25,58 +28,126 @@
                 Hi, I'm <strong>Thapelo Makgakga</strong>, a passionate web developer with expertise in both front-end and back-end development. I specialize in creating intuitive, responsive, and scalable web applications that provide great user experiences. 
             </p>
             <p class="about-text">
-                With my proficiency in technologies such as <strong>React, Node.js, PostgreSQL, MySQL, HTML, CSS, JavaScript</strong>, and more, I strive to keep up with the latest trends and continuously refine my skills to build innovative solutions. I believe in writing clean, efficient code that meets both technical and user expectations.
-            </p>
-            <p class="about-text">
-                When I'm not coding, I enjoy learning about emerging technologies, solving complex problems, and collaborating with fellow developers. Whether you need a website, web app, or custom software solution, I’m ready to turn your ideas into reality. Let's build something amazing together!
+                With my proficiency in technologies such as <strong>React, Node.js, PostgreSQL, MySQL, HTML, CSS, JavaScript</strong>, and more, I strive to keep up with the latest trends and continuously refine my skills to build innovative solutions.
             </p>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="full-screen section fade-in">
+    <!-- Languages & Technologies -->
+    <section id="languages" class="full-screen">
         <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-list">
-                <div class="skill">
-                    <img src="icons/html.svg" alt="HTML" class="skill-icon">
-                    <span>HTML</span>
-                </div>
-                <div class="skill">
-                    <img src="icons/css3.svg" alt="CSS3" class="skill-icon">
-                    <span>CSS3</span>
-                </div>
-                <div class="skill">
-                    <img src="icons/javascript.svg" alt="JavaScript" class="skill-icon">
+            <h2>Languages & Technologies</h2>
+            <div class="languages-icons">
+                <div class="tech-item">
+                    <i class="fab fa-js-square"></i>
                     <span>JavaScript</span>
                 </div>
-                <div class="skill">
-                    <img src="icons/react.svg" alt="React" class="skill-icon">
+                <div class="tech-item">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-react"></i>
                     <span>React</span>
                 </div>
-                <div class="skill">
-                    <img src="icons/nodejs.svg" alt="NodeJS" class="skill-icon">
-                    <span>NodeJS</span>
+                <div class="tech-item">
+                    <i class="fab fa-node-js"></i>
+                    <span>Node.js</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-database"></i>
+                    <span>PostgreSQL</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-server"></i>
+                    <span>MySQL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="full-screen">
+        <div class="container">
+            <h2>My Interests</h2>
+            <div class="interests-icons">
+                <div class="interest-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Cybersecurity</span>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-database"></i>
+                    <span>Data Engineering</span>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Full-Stack Development</span>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-robot"></i>
+                    <span>AI & Automation</span>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-user-secret"></i>
+                    <span>Ethical Hacking</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <h3>Weatherly App</h3>
+                    <p>A weather application that provides real-time weather data using APIs.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Cheaply Price Checker</h3>
+                    <p>A tool for comparing prices on different e-commerce websites in South Africa.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Liftly Carpool App</h3>
+                    <p>A carpooling app designed for long-distance commuters with an efficient matching system.</p>
+                    <a href="#">View Project</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="full-screen section fade-in">
+    <section id="contact" class="full-screen">
         <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <p class="contact-info">Feel free to reach out: <a href="mailto:tmakgakga@gmail.com">tmakgakga@gmail.com</a></p>
+            <h2>Contact</h2>
+            <form action="#" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>© 2025 Thapelo Makgakga. All rights reserved.</p>
+        <p>&copy; 2025 Thapelo Makgakga. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/Galaktikshapes" target="_blank" class="social-icon github"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/thapelo-makgakga" target="_blank" class="social-icon linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="mailto:tmakgakga@gmail.com" target="_blank" class="social-icon email"><i class="fas fa-envelope"></i> Email</a>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
